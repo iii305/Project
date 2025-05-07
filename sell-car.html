@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car - PMU Car Sales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sell-car.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    
+                                        <img src="images/pmu-logo.png" alt="PMU Logo" class="logo-img">
+
+                    <span class="logo-text">PMU Car Sales</span>
+                </a>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="cars.html"><i class="fas fa-car"></i> Cars</a>
+                <a href="search.html"><i class="fas fa-search"></i> Search</a>
+                <a href="sell-car.html" class="active"><i class="fas fa-plus-circle"></i> Sell Your Car</a>
+            </div>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="sell-car-section">
+            <div class="container">
+                <h1 class="section-title">Sell Your Car</h1>
+                
+                <div class="sell-car-intro">
+                    <p>Fill out the form below to list your car for sale on our platform. All fields marked with * are required.</p>
+                </div>
+                
+                <div class="sell-car-form-container">
+                    <form id="sell-car-form">
+                        <h2>Car Information</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="make">Make *</label>
+                                <input type="text" id="make" name="make" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model *</label>
+                                <input type="text" id="model" name="model" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="year">Year *</label>
+                                <input type="number" id="year" name="year" min="1900" max="2030" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Price (SAR) *</label>
+                                <input type="number" id="price" name="price" min="0" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mileage">Mileage (km) *</label>
+                                <input type="number" id="mileage" name="mileage" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="condition">Condition *</label>
+                                <select id="condition" name="condition" required>
+                                    <option value="">Select</option>
+                                    <option value="new">New</option>
+                                    <option value="used">Used</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="transmission">Transmission *</label>
+                                <select id="transmission" name="transmission" required>
+                                    <option value="">Select</option>
+                                    <option value="Automatic">Automatic</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fuel-type">Fuel Type *</label>
+                                <select id="fuel-type" name="fuel-type" required>
+                                    <option value="">Select</option>
+                                    <option value="Gasoline">Gasoline</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Electric">Electric</option>
+                                    <option value="Hybrid">Hybrid</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="color">Color *</label>
+                                <input type="text" id="color" name="color" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="features">Features</label>
+                                <div class="features-container">
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="navigation" name="features" value="Navigation System">
+                                        <label for="navigation">Navigation System</label>
+                                    </div>
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="camera" name="features" value="Rear Camera">
+                                        <label for="camera">Rear Camera</label>
+                                    </div>
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="bluetooth" name="features" value="Bluetooth">
+                                        <label for="bluetooth">Bluetooth</label>
+                                    </div>
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="leather" name="features" value="Leather Seats">
+                                        <label for="leather">Leather Seats</label>
+                                    </div>
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="sunroof" name="features" value="Sunroof">
+                                        <label for="sunroof">Sunroof</label>
+                                    </div>
+                                    <div class="feature-checkbox">
+                                        <input type="checkbox" id="cruise" name="features" value="Cruise Control">
+                                        <label for="cruise">Cruise Control</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Description *</label>
+                            <textarea id="description" name="description" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="car-images">Car Images *</label>
+                            <div class="file-inputs">
+                                <input type="file" id="car-images" name="car-images" accept="image/*" multiple required>
+                                <p class="file-help">Upload at least one image of your car (max 5 images)</p>
+                            </div>
+                        </div>
+                        
+                        <h2>Seller Information</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seller-name">Name *</label>
+                                <input type="text" id="seller-name" name="seller-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seller-phone">Phone *</label>
+                                <input type="tel" id="seller-phone" name="seller-phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seller-email">Email *</label>
+                                <input type="email" id="seller-email" name="seller-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seller-location">Location *</label>
+                                <input type="text" id="seller-location" name="seller-location" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group terms">
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                                <label for="agree-terms">I agree to the terms and conditions *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Submit Listing</button>
+                            <button type="reset" class="btn btn-secondary">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                                        <img src="images/pmu-logo.png" alt="PMU Logo" class="logo-img">
+
+                    <h3>PMU Car Sales</h3>
+                    <p>Student Project</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="sell-car.html">Sell Your Car</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> 202201380@pmu.edu.sa</p>
+                    <p><i class="fas fa-phone"></i> +966 500999005</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Prince Mohammad Bin Fahd University, Al Khobar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PMU Car Sales - Student Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/sell-car.js"></script>
+</body>
+</html> 

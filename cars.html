@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars List - PMU Car Sales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                                        <img src="images/pmu-logo.png" alt="PMU Logo" class="logo-img">
+
+                    <span class="logo-text">PMU Car Sales</span>
+                </a>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="cars.html" class="active"><i class="fas fa-car"></i> Cars</a>
+                <a href="search.html"><i class="fas fa-search"></i> Search</a>
+                <a href="sell-car.html"><i class="fas fa-plus-circle"></i> Sell Your Car</a>
+            </div>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cars-list-section">
+            <div class="container">
+                <h1 class="section-title">Available Cars</h1>
+                
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by" class="filter-select">
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="year-desc">Year: Newest First</option>
+                            <option value="year-asc">Year: Oldest First</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="condition-filter">Condition:</label>
+                        <select id="condition-filter" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="make-filter">Make:</label>
+                        <select id="make-filter" class="filter-select">
+                            <option value="all">All</option>
+                            <!-- Makes will be added by JavaScript -->
+                        </select>
+                    </div>
+                    <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+                </div>
+                
+                <!-- Cars Grid -->
+                <div class="cars-grid" id="cars-container">
+                    <!-- Cars will be dynamically added here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                                        <img src="images/pmu-logo.png" alt="PMU Logo" class="logo-img">
+
+                    <h3>PMU Car Sales</h3>
+                    <p>Student Project</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="sell-car.html">Sell Your Car</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> 202201380@pmu.edu.sa</p>
+                    <p><i class="fas fa-phone"></i> +966 500999005</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Prince Mohammad Bin Fahd University, Al Khobar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PMU Car Sales - Student Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/cars.js"></script>
+</body>
+</html> 
