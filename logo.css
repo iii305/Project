@@ -1,0 +1,46 @@
+.logo-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background-color: #1976d2;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo-primary-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-secondary-text {
+    font-size: 6px;
+    margin: 0;
+    line-height: 1;
+}
+
+.footer-logo .logo-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.footer-logo .logo-primary-text {
+    font-size: 28px;
+}
+
+.footer-logo .logo-secondary-text {
+    font-size: 12px;
+} 
