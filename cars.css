@@ -1,0 +1,56 @@
+/* Cars List Page */
+.cars-list-section {
+    padding: 40px 0;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+}
+
+#apply-filters {
+    align-self: flex-end;
+    min-width: 120px;
+}
+
+/* Responsive Filter Bar */
+@media (max-width: 576px) {
+    .filter-bar {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    #apply-filters {
+        width: 100%;
+        margin-top: 10px;
+    }
+} 

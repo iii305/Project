@@ -1,0 +1,265 @@
+/* Sell Car Page Styles */
+
+.sell-car-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 170px);
+}
+
+.sell-car-intro {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sell-car-form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.sell-car-form-container h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.sell-car-form-container h2:first-of-type {
+    margin-top: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.feature-checkbox {
+    flex: 0 0 50%;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-checkbox input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.file-inputs {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.file-inputs:hover {
+    border-color: #4a90e2;
+}
+
+.file-inputs input[type="file"] {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 10px 0;
+}
+
+.file-help {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.terms {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3a7bc8;
+}
+
+.btn-secondary {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e5e5e5;
+}
+
+/* Error Styles */
+.error-input {
+    border-color: #d9534f !important;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.file-help.error {
+    color: #d9534f;
+}
+
+.form-error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Success Message Styles */
+.success-message {
+    text-align: center;
+    padding: 30px;
+}
+
+.success-message i {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.success-message h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.success-message a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.success-message a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-group {
+        min-width: 100%;
+    }
+    
+    .feature-checkbox {
+        flex: 0 0 100%;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Image preview styles */
+.image-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.preview-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
